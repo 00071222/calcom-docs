@@ -23,13 +23,10 @@ Asegúrate de tener instalado **Node.js** (versión 18 o superior) en tu sistema
 
 ### 1. Instalar dependencias
 
-Puedes usar tu gestor de paquetes favorito (`npm`, `yarn` o `pnpm`). Instala las dependencias ejecutando en la raíz de este repositorio:
+Se recomienda utilizar **pnpm** para gestionar las dependencias de este repositorio. Instálalas ejecutando en la raíz:
 
 ```bash
-npm install
-# o si prefieres yarn/pnpm:
-# yarn install
-# pnpm install
+pnpm install
 ```
 
 ### 2. Ejecutar el servidor de desarrollo
@@ -37,9 +34,7 @@ npm install
 Para iniciar el servidor local con recarga en vivo (hot-reload) y soporte experimental de Turbopack:
 
 ```bash
-npm run dev
-# o
-# yarn dev
+pnpm run dev
 ```
 
 El sitio estará disponible para visualizar en tu navegador en:  
@@ -50,9 +45,7 @@ El sitio estará disponible para visualizar en tu navegador en:
 Para compilar la aplicación, generar la exportación HTML estática (`out/`) e indexar el buscador con `pagefind`:
 
 ```bash
-npm run build
-# o
-# yarn build
+pnpm run build
 ```
 
 Este comando generará la carpeta `/out` con todos los recursos listos para ser servidos estáticamente.
