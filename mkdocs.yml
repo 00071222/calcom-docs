@@ -1,0 +1,52 @@
+site_name: "Cal.diy — Preguntas Condicionales"
+site_description: "Documentación técnica y de usuario del fork de Cal.diy con soporte de preguntas condicionales en formularios de reserva."
+repo_url: "https://codeberg.org/Josstsx/cal-aca.diy/src/branch/feat/conditional-questions-11900"
+repo_name: "Josstsx/cal-aca.diy"
+edit_uri: "edit/feat/conditional-questions-11900/documentation/"
+
+# Carpeta fuente de la documentación (distinta de docs/, que ya existe
+# en el repo para la referencia OpenAPI heredada de Cal.diy)
+docs_dir: documentation
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+
+nav:
+  - Inicio: index.md
+  - Guía de usuario:
+      - Preguntas condicionales: user-guide/conditional-questions.md
+  - Documentación técnica:
+      - Instalación y entorno: technical/installation.md
+      - Arquitectura de la funcionalidad: technical/architecture.md
+      - Referencia de API: technical/api-reference.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
